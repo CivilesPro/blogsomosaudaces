@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lo que los expertos descubren sobre la convivencia de bebés y mascotas | somosaudaces.com</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap');
         /* --- ESTILOS PROFESIONALES --- */
 
         /* 1. Base y Tipografía Moderna */
-        body { 
+        body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Pila de fuentes moderna */
             line-height: 1.8; /* Más espaciado para legibilidad */
             color: #333; 
@@ -60,8 +61,8 @@
         
         /* 4. Sidebar "Sticky" de Alta Presencia (MODIFICADO) */
         .sidebar-ad {
-            flex: 1; 
-            max-width: 300px; 
+            flex: 1;
+            max-width: 320px;
             order: 2;
             position: sticky; /* <- LA CLAVE DE LA PRESENCIA */
             top: 40px; /* Distancia desde arriba al hacer scroll */
@@ -71,21 +72,23 @@
         /* 5. Estilos de Contenido (Refinados) */
         .category { color: #c0392b; font-weight: bold; text-transform: uppercase; font-size: 0.85em; margin-bottom: 5px; }
         
-        h1 { 
-            font-weight: 800; /* Más peso */
-            color: #1a2a3a; 
-            font-size: 2.5em; 
-            line-height: 1.2; 
-            margin-top: 10px; 
-            margin-bottom: 15px;
-            letter-spacing: -0.5px; /* Ajuste profesional */
+        h1 {
+            font-family: "Playfair Display", "Merriweather", "Georgia", serif;
+            font-weight: 700; /* Más peso */
+            color: #161b22;
+            font-size: 3em;
+            line-height: 1.15;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            letter-spacing: -0.4px; /* Ajuste profesional */
         }
-        h2 { 
+        h2 {
             font-weight: 700;
-            color: #2c3e50; 
+            color: #2c3e50;
             border-bottom: 3px solid #f0f0f0; /* Borde más suave y grueso */
-            padding-bottom: 8px; 
+            padding-bottom: 8px;
             margin-top: 50px; /* Más separación */
+            margin-bottom: 20px;
             font-size: 1.8em;
         }
         .metadata { color: #888; font-size: 0.85em; font-style: italic; margin-bottom: 30px; }
@@ -141,59 +144,91 @@
 
         /* 7. Anuncio Lateral (Pulido) */
         .ad-box {
-            background-color: white;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 20px; /* Padding unificado */
+            background: #ffffff;
+            border: 1px solid #e1e4ea;
+            border-radius: 22px;
+            padding: 34px 28px;
             text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra más profesional */
+            box-shadow: 0 18px 45px rgba(23, 36, 50, 0.08);
         }
-        
-        .ad-box .ad-title {
+
+        .ad-brand {
             font-weight: 700;
-            color: #c0392b; 
-            margin-bottom: 5px;
+            font-size: 1.1em;
+            color: #2c3e50;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        .ad-trust {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            background: #f5f8ff;
+            color: #1d3b70;
+            font-size: 0.75em;
+        }
+
+        .ad-trust .stars {
+            color: #2ecc71;
+            letter-spacing: 1px;
             font-size: 1.1em;
         }
-        
-        .ad-rating {
-            margin: 10px 0;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #eee;
+
+        .ad-box .ad-title {
+            font-family: "Playfair Display", "Georgia", serif;
+            font-weight: 700;
+            color: #1b1f32;
+            margin: 22px 0 12px;
+            font-size: 1.9em;
+            line-height: 1.25;
         }
-        .ad-rating .stars {
-            color: #ff9800; 
-            font-size: 1.2em;
-        }
-        .ad-rating p {
-            font-size: 0.8em; 
-            color: #888; 
-            margin: 4px 0 0 0;
+
+        .ad-subtitle {
+            font-size: 0.95em;
+            color: #4c5767;
+            margin-bottom: 26px;
+            line-height: 1.6;
         }
 
         .ad-box .ad-product-image {
-            max-width: 80%;
+            max-width: 100%;
             height: auto;
-            margin: 20px auto 25px auto;
+            margin: 18px auto 24px auto;
             display: block;
         }
-        
-        .ad-cta-new {
-            display: block;
-            background-color: #21216d; 
-            color: white;
-            padding: 15px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 4px;
-            margin-top: 25px;
+
+        .ad-note {
+            font-size: 0.85em;
+            color: #7a8698;
+            margin-bottom: 28px;
+        }
+
+        .ad-price {
             font-size: 1.1em;
-            letter-spacing: 0.5px;
+            color: #1f2a44;
+            margin-bottom: 16px;
+        }
+
+        .ad-cta-new {
+            display: inline-block;
+            background-color: #272767;
+            color: white;
+            padding: 14px 22px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 999px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            letter-spacing: 1.2px;
             text-transform: uppercase;
-            transition: background-color 0.2s;
+            transition: background-color 0.2s ease;
         }
         .ad-cta-new:hover {
-            background-color: #3b3b8e;
+            background-color: #3a3a8f;
         }
 
         /* 8. Responsividad (Móvil) */
@@ -218,10 +253,10 @@
                 position: static; /* Desactiva el sticky en móvil */
             }
             .ad-box {
-                 box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                 box-shadow: 0 16px 36px rgba(23,36,50,0.14);
             }
             h1 { font-size: 1.8em; }
-            h2 { font-size: 1.4em; }
+            h2 { font-size: 1.3em; }
         }
     </style>
 </head>
@@ -291,29 +326,31 @@
 
         </section>
 
-        
-        
-    </div> <aside class="sidebar-ad">
+
+
+    </div>
+
+    <aside class="sidebar-ad">
         <div class="ad-box">
-            
-            <p class="ad-title">Ama a tus mascotas, protege tu hogar.</p>
-            
-            <div class="ad-rating">
+            <p class="ad-brand">Rusoft Care</p>
+            <div class="ad-trust">
                 <span class="stars">★★★★★</span>
-                <p>4.8 de 5 basado en 1,245 Padres Satisfechos</p>
+                <span>Trustpilot · 4.8/5 según 1.245 familias</span>
             </div>
 
+            <p class="ad-title">Más años de abrazos sin alergias con el Mini Removedor Rusoft</p>
+            <p class="ad-subtitle">El secreto recomendado por pediatras para mantener la ropa del bebé, el sofá y la cuna libres de pelo.</p>
+
             <img src="producto.png" alt="Mini Removedor de Pelo Rusoft" class="ad-product-image">
-            
-            <p style="font-size: 1em; margin-bottom: 15px; font-weight: 500; line-height: 1.5;">
-               Elimina el pelo de tus mascotas al instante con el <strong>Mini Removedor Reutilizable</strong>. Manten tu ropa, sofá y la cuna del bebé siempre libres de pelo.
-            </p>
-            
-            <a href="URL_AL_CARRITO_DE_COMPRAS" class="ad-cta-new">
-               CONSULTAR DISPONIBILIDAD
-            </a>
+
+            <p class="ad-note">Incluye envío gratis y garantía de satisfacción de 30 días.</p>
+            <p class="ad-price">Disponible hoy por $24.990</p>
+
+            <a href="URL_AL_CARRITO_DE_COMPRAS" class="ad-cta-new">Consultar disponibilidad</a>
         </div>
-    </aside> 
-    
-</div> </body>
+    </aside>
+
+</div>
+
+</body>
 </html>
