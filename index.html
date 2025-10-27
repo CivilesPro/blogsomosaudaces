@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo que los expertos descubren sobre la convivencia de bebés y mascotas | somosaudaces.com</title>
+    <style>
+        /* --- ESTILOS PROFESIONALES --- */
+
+        /* 1. Base y Tipografía Moderna */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Pila de fuentes moderna */
+            line-height: 1.8; /* Más espaciado para legibilidad */
+            color: #333; 
+            background-color: #f9f9f9; /* Blanco ligeramente más suave */
+            margin: 0; 
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+        
+        a { color: #27ae60; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* 2. Barra de Navegación de Autoridad (NUEVO) */
+        .top-bar {
+            background-color: #2c3e50; /* Azul oscuro profesional */
+            color: white;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 0.9em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .top-bar p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 3. Contenedor y Columnas */
+        .page-container {
+            max-width: 1100px; 
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex; 
+            gap: 35px; /* Más espacio entre columnas */
+            align-items: flex-start; /* Alinea al inicio */
+        }
+
+        .main-content {
+            flex: 2.5; /* Más balanceado */
+            min-width: 0; 
+            padding: 35px 45px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+            order: 1; 
+        }
+        
+        /* 4. Sidebar "Sticky" de Alta Presencia (MODIFICADO) */
+        .sidebar-ad {
+            flex: 1; 
+            max-width: 300px; 
+            order: 2;
+            position: sticky; /* <- LA CLAVE DE LA PRESENCIA */
+            top: 40px; /* Distancia desde arriba al hacer scroll */
+            align-self: flex-start;
+        }
+
+        /* 5. Estilos de Contenido (Refinados) */
+        .category { color: #c0392b; font-weight: bold; text-transform: uppercase; font-size: 0.85em; margin-bottom: 5px; }
+        
+        h1 { 
+            font-weight: 800; /* Más peso */
+            color: #1a2a3a; 
+            font-size: 2.5em; 
+            line-height: 1.2; 
+            margin-top: 10px; 
+            margin-bottom: 15px;
+            letter-spacing: -0.5px; /* Ajuste profesional */
+        }
+        h2 { 
+            font-weight: 700;
+            color: #2c3e50; 
+            border-bottom: 3px solid #f0f0f0; /* Borde más suave y grueso */
+            padding-bottom: 8px; 
+            margin-top: 50px; /* Más separación */
+            font-size: 1.8em;
+        }
+        .metadata { color: #888; font-size: 0.85em; font-style: italic; margin-bottom: 30px; }
+        
+        .highlight-quote { 
+            border-left: 5px solid #c0392b; /* Paleta unificada (rojo) */
+            padding: 20px 25px; 
+            background-color: #fff8f8; /* Tinte rojo muy sutil */
+            margin: 30px 0; 
+            font-size: 1.15em; 
+            font-style: italic;
+            font-family: 'Georgia', serif; /* Contraste tipográfico */
+        }
+        
+        .story-box { 
+            border: 1px solid #e0e0e0; 
+            padding: 25px; 
+            background-color: #fcfcfc; 
+            border-radius: 5px; 
+            margin: 30px 0;
+        }
+        .story-box img, .header-image img { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 5px; 
+            margin-bottom: 15px;
+            display: block; 
+        }
+        
+        /* 6. CTA Principal (Footer) - REINCORPORADO Y MEJORADO */
+        .cta-footer { 
+            text-align: center; 
+            margin-top: 50px; 
+            padding-top: 25px; 
+            border-top: 1px solid #eee; 
+        }
+        .cta-button { 
+            display: inline-block; 
+            background-color: #27ae60; 
+            color: white; 
+            padding: 16px 35px; 
+            text-decoration: none; 
+            font-size: 1.3em; 
+            font-weight: 700; 
+            border-radius: 5px; 
+            box-shadow: 0 4px 8px rgba(39, 174, 96, 0.25);
+            transition: all 0.2s ease-in-out;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(39, 174, 96, 0.3);
+        }
+
+        /* 7. Anuncio Lateral (Pulido) */
+        .ad-box {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px; /* Padding unificado */
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra más profesional */
+        }
+        
+        .ad-box .ad-title {
+            font-weight: 700;
+            color: #c0392b; 
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        
+        .ad-rating {
+            margin: 10px 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .ad-rating .stars {
+            color: #ff9800; 
+            font-size: 1.2em;
+        }
+        .ad-rating p {
+            font-size: 0.8em; 
+            color: #888; 
+            margin: 4px 0 0 0;
+        }
+
+        .ad-box .ad-product-image {
+            max-width: 80%;
+            height: auto;
+            margin: 20px auto 25px auto;
+            display: block;
+        }
+        
+        .ad-cta-new {
+            display: block;
+            background-color: #21216d; 
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 25px;
+            font-size: 1.1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: background-color 0.2s;
+        }
+        .ad-cta-new:hover {
+            background-color: #3b3b8e;
+        }
+
+        /* 8. Responsividad (Móvil) */
+        @media (max-width: 992px) {
+            .page-container {
+                flex-direction: column; 
+                gap: 0;
+                margin: 0;
+                padding: 0;
+            }
+            .main-content {
+                padding: 20px;
+                box-shadow: none; 
+                border-radius: 0;
+                margin: 0;
+            }
+            .sidebar-ad {
+                max-width: 100%;
+                margin: 25px auto;
+                padding: 0 20px;
+                order: 3; 
+                position: static; /* Desactiva el sticky en móvil */
+            }
+            .ad-box {
+                 box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            }
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.4em; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <p>somosaudaces.com</p>
+</div>
+
+<div class="page-container">
+
+    <div class="main-content">
+        <header class="post-header">
+            <p class="category">SALUD Y FAMILIA</p>
+            <h1>Lo que los expertos descubren sobre la convivencia de bebés y mascotas — y cómo reducir el riesgo sin tener que alejar a tu gato.</h1>
+            <p class="metadata">Publicado en somosaudaces.com | Fuentes: Frontiers in Allergy (Luo et al., 2022); Journal of Allergy & Clinical Immunology; ScienceDaily.</p>
+        </header>
+
+        <div class="header-image">
+            <img src="bebejugando.jpg" alt="Bebé jugando de forma segura cerca de una mascota">
+        </div>
+
+        <section class="content-body">
+            
+            <h2>El pelo de gato está estadísticamente asociado con el riesgo de asma infantil, según nuevos estudios.</h2>
+
+            <p>Durante años se ha repetido el debate: ¿los bebés pueden convivir con mascotas?</p>
+            
+            <div class="highlight-quote">
+                <p>Un estudio reciente publicado en <strong>Frontiers in Allergy</strong> revisó más de 60 investigaciones con casi dos millones de niños y encontró algo interesante: la exposición temprana al pelo de gato está estadísticamente asociada con un incremento altísimo en el riesgo de asma infantil.</p>
+            </div>
+
+            <p>No es una sentencia, pero sí una alarma. El pelo de las mascotas puede transportar partículas microscópicas, polvo y alérgenos que quedan en la ropa, los muebles y las cunas. Para los adultos es casi imperceptible; pero para un sistema respiratorio que apenas se está formando, puede ser un estímulo constante.</p>
+            
+            <h2>Convivir, no aislar: El nuevo enfoque pediátrico</h2>
+            
+            <div class="header-image">
+                <img src="juguetesgatos-66.jpg" alt="No hay que alejar a las mascotas">
+            </div>
+
+            <p>Antes de que alguien piense en “despedirse del gato”, los mismos estudios reconocen otra cara del asunto: <strong>los animales también fortalecen el sistema inmune de los niños.</strong></p>
+            
+            <p>La exposición temprana a microorganismos benignos del entorno animal puede ayudar a desarrollar defensas más equilibradas. En otras palabras, el problema no es el gato, sino <strong>la acumulación de pelo</strong> que no se limpia a tiempo.</p>
+
+            <p>Por eso los pediatras recomiendan mantener una higiene super cuidadosa en la ropa y superficies, <strong>sobre todo en los bebes de al menos 3 años.</strong></p>
+            
+            <h2>La historia detrás de una solución práctica</h2>
+             
+            <div class="story-box">
+                <p>En mi casa siempre hubo gatos. Cuando nació mi sobrina, mi mamá repitió su clásica advertencia:</p>
+                <p style="font-style: italic; color: #555; text-align: center; border-bottom: 1px dashed #ccc; padding: 10px 0 15px 0; margin-bottom: 15px;"><strong>“Los bebés y los pelos no se mezclan.”</strong></p>
+                
+                <p>Durante semanas la vi pasar horas barriendo la casa, obsesionada porque no importa cuanto limpiara siempre se escabullian en la ropa los pelos del gato. Hasta que encontré algo tan simple que me hizo reír: <strong>un mini removedor de pelos que ademas era reutilizable.</strong></p>
+                
+                <img src="miniremovedor.jpg" alt="Mini Removedor Rusoft quitando pelo de un sofá">
+
+                <p>Se lo compre, para que lo probará en la ropa, la cuna y el sofá, y en segundos quitaba toda los pelos que quedaban. Fue el tipo de herramienta que te hace decir <strong>“¿por qué no la conocí antes?”.</strong> Solo era lavarlo y volvia funcionar perfectamente</p>
+                
+                <p>Desde entonces, mi gato sigue siendo parte de la familia, el bebé respira tranquilo y mi mamá duerme mejor.</p>
+            </div>
+
+            <h2>La moraleja</h2>
+            
+            <p>No necesitas elegir entre tu mascota y tu tranquilidad. Solo necesitas un poco de información y una herramienta práctica.</p>
+            
+            <p>Porque sí, los estudios existen; pero también existen formas sencillas de mantener el hogar limpio, el aire liviano y la familia unida.</p>
+
+        </section>
+
+        <footer class="cta-footer">
+            <p class="cta-intro" style="font-size: 1.1em; font-weight: 600; margin-bottom: 20px;">**Protege a tu hijo sin sacrificar a tu mascota.**</p>
+            <a href="URL_A_TU_TIENDA_RUSOFT" class="cta-button">
+                Descubre la herramienta que uso en casa
+            </a>
+        </footer>
+        
+    </div> <aside class="sidebar-ad">
+        <div class="ad-box">
+            
+            <p class="ad-title">Ama a tus mascotas, protege tu hogar.</p>
+            
+            <div class="ad-rating">
+                <span class="stars">★★★★★</span>
+                <p>4.8 de 5 basado en 1,245 Padres Satisfechos</p>
+            </div>
+
+            <img src="producto.png" alt="Mini Removedor de Pelo Rusoft" class="ad-product-image">
+            
+            <p style="font-size: 1em; margin-bottom: 15px; font-weight: 500; line-height: 1.5;">
+               Elimina el pelo de tus mascotas al instante con el <strong>Mini Removedor Reutilizable</strong>. Manten tu ropa, sofá y la cuna del bebé siempre libres de pelo.
+            </p>
+            
+            <a href="URL_AL_CARRITO_DE_COMPRAS" class="ad-cta-new">
+               CONSULTAR DISPONIBILIDAD
+            </a>
+        </div>
+    </aside> 
+    
+</div> </body>
+</html>
